@@ -1,0 +1,26 @@
+(defun liniar(l)
+    (cond
+        ((null l) t)
+        ((listp (car l)) nil)
+        (t (liniar (cdr l)))
+    )
+)
+
+(defun nr_elem(l)
+    (cond
+        ((null l) 0)
+        (t (+ 1 (nr_elem (cdr l))))
+    )
+)
+
+(defun sterg(l)
+    (cond
+        ((null l) '())
+        ((atom (car l)) (cons (car l) (sterg (cdr l))))
+        ((and (liniar (car l)) (eq (mod (nr_elem (car l)) 2) 1)) (cons (car l) (sterg (cdr l))))
+        ((and (liniar (car l)) (eq (mod (nr_elem (car l)) 2) 0)) (sterg (cdr l)))
+        (t (cons (sterg (car l)) (sterg (cdr l))))
+    )
+)
+
+(print (sterg '((2 3 4) (6 (7 8) ((7 9) 8)) (6 8) 9)))

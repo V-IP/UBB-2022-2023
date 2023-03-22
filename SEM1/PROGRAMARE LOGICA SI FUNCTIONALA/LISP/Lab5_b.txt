@@ -1,0 +1,22 @@
+(defun adaugare (l k)
+    (cond
+	((null l) k)
+        (t (cons (car l) (adaugare (cdr l) k)))
+    )
+)
+
+(defun pereche (l e)
+    (cond
+        ((null l) nil)
+        (t (cons (list e (car l)) (pereche (cdr l) e)))
+    )
+)
+
+(defun perechi (l)
+    (cond
+        ((null (cdr l)) nil)
+        (t (adaugare (pereche (cdr l) (car l)) (perechi (cdr l))))
+    )
+)
+
+(print(perechi '(a b c d)))

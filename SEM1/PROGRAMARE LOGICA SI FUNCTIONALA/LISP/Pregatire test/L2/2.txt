@@ -1,0 +1,42 @@
+; 2. Sa se tipareasca lista nodurilor de pe nivelul k dintr-un arbore de tipul (1).
+
+(defun parcurg_st (arb nv nm)
+    (cond
+        ((null arb) nil)
+        ((eq nv (+ 1 nm)) nil)
+        (t (cons (car arb) (cons (cadr arb) (parcurg_st (caddr arb) (+ 1 nv) (+ nm (cadr arb))))))
+    )
+)
+
+(defun stang (arb)
+    (cond
+        ;((atom arb) arb)
+        (t (parcurg_st (cddr arb) 0 0))
+    )
+)
+
+(defun parcurg_dr (arb nv nm)
+    (cond
+        ((null arb) nil)
+        ((eq nv (+ 1 nm)) arb)
+        (t (parcurg_st (caddr arb) (+ 1 nv) (+ nm (cadr arb))))
+    )
+)
+
+(defun drept (arb)
+    (cond
+        ;((atom arb) arb)
+        (t (parcurg_dr (cddr arb) 0 0))
+    )
+)
+
+(defun nivel (arb k nivel)
+    (cond
+        ((and (atom arb) (eq nivel k)) (list (car arb)))
+        ((atom arb) nil)
+        ((eq nivel k) (list (car arb)))
+        (t (append (nivel (stang arb) k (+ 1 nivel)) (nivel (drept arb) k (+ 1 nivel))))
+    )
+)
+
+(print (nivel '(A 2 B 0 C 2 D 0 E 0) '2 '1))

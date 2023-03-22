@@ -1,0 +1,16 @@
+(defun operatie (l)
+    (cond
+        ((null l) nil)
+        ((and (atom (car l)) (and (numberp (cadr l)) (numberp (caddr l)))) (cons (eval (list (car l) (cadr l) (caddr l))) (operatie (cdddr l))))
+        (t (cons (car l) (operatie (cdr l))))
+    )
+)
+
+(defun expresie (l)
+    (cond
+        ((null (cdr l)) (car l))
+        (t (expresie (operatie l)))
+    )
+)
+
+(print (expresie '(+ * 2 4 3)))

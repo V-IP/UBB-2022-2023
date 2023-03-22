@@ -1,0 +1,69 @@
+; 15.a) Sa se scrie o functie care intoarce reuniunea a doua multimi.
+(defun apartine(l e)
+    (cond
+        ((atom l) (eq l e))
+        ((eq (car l) e) t)
+        (t (apartine (cdr l) e))
+    )
+)
+
+(defun U (l1 l2)
+    (cond
+        ((null l1) l2)
+        ((not(apartine l2 (car l1))) (U (cdr l1) (append l2 (list (car l1)))))
+        (t (U (cdr l1) l2))
+    )
+)
+
+;(print (append '(1 2 3) '(4)))
+;(print (U '(1 2 3 4 5) '(5 1 6 7 9)))
+
+;15.b) Sa se construiasca o functie care intoarce produsul atomilor numerici dintr-o lista, de la orice nivel.
+(defun prod(l)
+    (cond
+        ((numberp l) l)
+        ((atom l) 1)
+        (t (apply '* (mapcar #'prod l)))
+    )
+)
+
+
+;(print (prod '(5 (1 2 a (b (8 c) d)))))
+
+;15.c) Definiti o functie care sorteaza cu pastrarea dublurilor o lista liniara.
+
+(defun insSor(l e)
+    (cond
+        ((null l) (list e))
+        ((< e (car l)) (cons e l))
+        (t (cons (car l) (insSor (cdr l) e)))
+    )
+)
+
+(defun sortare(l col)
+    (cond
+        ((null l) col)
+        (t (sortare (cdr l) (insSor col (car l))))
+    )
+)
+
+;(print (insSor '() '1))
+;(print (sortare '(1 3 2 5 6 7 7 3 9) '()))
+
+;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;(print (cons '(1 2 3) '5)) ;=> ((1 2 3).5)
+;(print (cons '5 '(1 2 3))) ;=> (5 1 2 3)
+;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+;15.d) Definiti o functie care construiește o listă cu pozițiile elementului minim dintr-o listă liniară numerică.
+
+(defun pozitie(l min poz col)
+    (cond
+        ((null l) col)
+        ((< (car l) min) (pozitie (cdr l) (car l) (+ 1 poz) (list poz)))
+        ((eq (car l) min) (pozitie (cdr l) min (+ 1 poz) (cons poz col)))
+        (t (pozitie (cdr l) min (+ 1 poz) col))
+    )
+)
+
+(print (pozitie '(3 2 5 6 2 7 7 2 3 9) '9999 '1 '()))

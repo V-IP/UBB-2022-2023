@@ -1,0 +1,67 @@
+; 1
+; a) Sa se insereze intr-o lista liniara un atom a dat dupa al 2-lea, al 4-lea, al 6-lea,....element.
+
+(defun adauga (l e i)
+    (cond
+        ((null l) '())
+        ((eq (mod i 2) 0) (cons (car l) (cons e (adauga (cdr l) e (+ 1 i)))))
+        (t (cons (car l) ( adauga (cdr l) e (+ 1 i))))
+    )
+)
+
+(defun adaugaP (l e)
+    (adauga l e 1)
+)
+        
+;(print (adaugaP '(1 2 3 4 5 6) 'x))
+
+; b) Definiti o functie care obtine dintr-o lista data lista tuturor atomilor care apar, pe orice nivel, dar in ordine inversa. De exemplu: (((A B) C) (D E)) --> (E D C B A)
+
+(defun linie (l)
+    (cond
+        ((null l) nil)
+        ((atom l) (list l))
+        (t (append (linie (cdr l)) (linie (car l))))
+    )
+)
+
+;(print (linie '(((A B) C) (D E))))
+
+; c) Definiti o functie care intoarce cel mai mare divizor comun al numerelor dintr-o lista neliniara.
+
+(defun cmmdc (e1 e2)
+    (cond
+        ((eq e1 e2) e1)
+        ((> e1 e2) (cmmdc (- e1 e2) e2))
+        ((< e1 e2) (cmmdc e1 (- e2 e1)))
+     )
+)
+
+(defun divizor (l div)
+    (cond
+        ((null l) div)
+        (t (divizor (cdr l) (cmmdc (car l) div)))
+     )
+)
+
+(defun divizorP (l)
+    (divizor (cdr (linie l)) (car (linie l)))
+)
+
+;(print (divizorP '(12 4 (12) ((8) 6) (8))))
+
+; d) Sa se scrie o functie care determina numarul de aparitii ale unui atom dat intr-o lista neliniara.
+
+(defun nrAparitii (l e)
+    (cond
+        ((null l) 0)
+        ((eq (car l) e) (+ 1 (nrAparitii (cdr l) e)))
+        (t (nrAparitii (cdr l) e))
+    )
+)
+
+(defun nrAparitiiP (l e)
+    (nrAparitii (linie l) e)
+)
+
+;(print (nrAparitiiP '(2 4 (2) ((8) 2) (8)) '2))

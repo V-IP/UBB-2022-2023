@@ -1,0 +1,59 @@
+; 4
+; a) Definiti o functie care intoarce suma a doi vectori.
+
+(defun suma (v1 v2)
+    (cond
+        ((or (null v1) (null v2)) nil)
+        (t (cons (+ (car v1) (car v2)) (suma (cdr v1) (cdr v2))))
+    )
+)
+        
+;(print (suma '(1 2 3) '(4 5 6)))
+
+; b) Definiti o functie care obtine dintr-o lista data lista tuturor atomilor care apar, pe orice nivel, dar in aceeasi ordine. 
+; De exemplu: (((A B) C) (D E)) --> (A B C D E)
+
+(defun linie (l)
+    (cond
+        ((null l) '())
+        ((atom l) (list l))
+        ((listp l) (append (linie (car l)) (linie (cdr l))))
+    )
+)
+
+;(print (linie '(((A B) C) (D E))))
+
+; c) Sa se scrie o functie care plecand de la o lista data ca argument, inverseaza numai secventele continue de atomi. 
+; Exemplu: (a b c (d (e f) g h i)) ==> (c b a (d (f e) i h g))
+
+(defun inv (l)
+    (cond
+        ((null l) nil)
+        ((atom (car l)) (append (inv (cdr l)) (list (car l))))
+        ((listp (car l)) (append (list (inv (car l))) (inv (cdr l))))
+        (t (inv (cdr l)))
+    )
+)
+
+(print (inv '(a b c (d (e f) g h i))))
+
+; d) Sa se construiasca o functie care intoarce maximul atomilor numerici dintr-o lista, de la nivelul superficial.
+
+(defun max2 (e1 e2)
+    (cond
+        ((< e1 e2) e2)
+        ((> e1 e2) e1)
+        (t e1)
+    )
+)
+
+(defun maxim (l)
+    (cond
+        ((null l) 0)
+        ((numberp(car l)) (max2 (car l) (maxim (cdr l))))
+        (t (maxim (cdr l)))
+    )
+)
+
+
+;(print (maxim '(A 1 (B 7) 5 3 (C (9)) F)))

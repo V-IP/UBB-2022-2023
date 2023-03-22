@@ -1,0 +1,24 @@
+(defun nrAparitii (l e)
+    (cond
+        ((null l) 0)
+        ((equal (car l) e) (+ 1 (nrAparitii (cdr l) e)))
+        (t (nrAparitii (cdr l) e))
+    )
+)
+
+(defun sterge (l e)
+    (cond
+        ((null l) nil)
+        ((equal (car l) e) (sterge (cdr l) e))
+        (t (cons (car l) (sterge (cdr l) e)))
+    )
+)
+
+(defun perechi (l)
+    (cond
+        ((null l) nil)
+        (t (cons (list (car l) (nrAparitii l (car l))) (perechi (sterge (cdr l) (car l)))))
+    )
+)
+
+(print (perechi '(A B A B A C A)))

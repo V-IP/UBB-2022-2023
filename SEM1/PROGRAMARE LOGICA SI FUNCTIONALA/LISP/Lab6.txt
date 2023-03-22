@@ -1,0 +1,13 @@
+(defun nivel (l e n)
+    (cond
+        ((null l) nil)
+        ((equal (car l) e) n)
+        (t (or (nivel (cadr l) e (+ 1 n)) (nivel (caddr l) e (+ 1 n))))
+    )
+)
+
+(defun nivelP (l e)
+    (nivel l e 0)
+)
+
+(print(nivelP '(A (B) (C (D) (E))) 'D))

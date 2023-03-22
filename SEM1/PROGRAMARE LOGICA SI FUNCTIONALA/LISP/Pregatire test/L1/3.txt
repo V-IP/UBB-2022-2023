@@ -1,0 +1,64 @@
+; 3
+; a) Definiti o functie care intoarce produsul a doi vectori.
+
+(defun produs (v1 v2)
+    (cond
+        ((or (null v1) (null v2)) 0)
+        (t (+ (* (car v1) (car v2)) (produs (cdr v1) (cdr v2))))
+    )
+)
+    
+;(print (produs '(1 2 3) '(4 5 6)))
+
+; b) Sa se construiasca o functie care intoarce adancimea unei liste.
+
+(defun deep (l)
+    (cond
+        ((null l) 1)
+        ((listp (car l)) (+ 1 (deep (car l))))
+        (t (deep (cdr l)))
+    )
+)
+
+
+;(print (deep '(6 (2 3 (4) (5) (6 (7))))))
+
+; c) Definiti o functie care sorteaza fara pastrarea dublurilor o lista liniara.
+
+(defun inserare (e l)
+    (cond
+        ((null l) (list e))
+        ((eq e (car l)) l)
+        ((< e (car l)) (cons e l))
+        (t (cons (car l) (inserare e (cdr l))))
+    )
+)
+
+(defun sortare (l)
+    (cond
+        ((null (cdr l)) (inserare (car l) (cdr l)))
+        (t (inserare (car l) (sortare (cdr l))))
+    )
+)
+
+;(print (sortare '(1 3 2 5 6 7 7 3 9)))
+
+; d) Sa se scrie o functie care intoarce intersectia a doua multimi.
+
+(defun exista (e l)
+    (cond
+        ((null l) nil)
+        ((eq (car l) e) t)
+        (t (exista e (cdr l)))
+    )
+)
+
+(defun intersectie (l1 l2)
+    (cond
+        ((null l1) nil)
+        ((exista (car l1) l2) (cons (car l1) (intersectie (cdr l1) l2)))
+        (t (intersectie (cdr l1) l2))
+    )
+)   
+    
+;(print (intersectie '(1 2 3 4 5) '(1 5 6 7 9)))
