@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net7.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\iulia\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\UBB\\Anul 2\\Sem1\\METODE AVANSATE DE PROGRAMARE\\Lab8_MAP_CSharp\\Lab8_MAP_CSharp\\Lab8_MAP_CSharp.csproj",
+      "projectName": "Lab8_MAP_CSharp",
+      "projectPath": "D:\\UBB\\Anul 2\\Sem1\\METODE AVANSATE DE PROGRAMARE\\Lab8_MAP_CSharp\\Lab8_MAP_CSharp\\Lab8_MAP_CSharp.csproj",
+      "packagesPath": "C:\\Users\\iulia\\.nuget\\packages\\",
+      "outputPath": "D:\\UBB\\Anul 2\\Sem1\\METODE AVANSATE DE PROGRAMARE\\Lab8_MAP_CSharp\\Lab8_MAP_CSharp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\iulia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Users\\iulia\\.dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

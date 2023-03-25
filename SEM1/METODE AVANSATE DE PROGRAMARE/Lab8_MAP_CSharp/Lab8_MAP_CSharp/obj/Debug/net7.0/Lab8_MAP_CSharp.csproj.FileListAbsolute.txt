@@ -1,0 +1,30 @@
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.exe
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.deps.json
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.runtimeconfig.json
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.pdb
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.csproj.AssemblyReference.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.AssemblyInfoInputs.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.AssemblyInfo.cs
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.csproj.CoreCompileInputs.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\refint\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.pdb
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.genruntimeconfig.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp\Lab8_MAP_CSharp\obj\Debug\net7.0\ref\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.exe
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.deps.json
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.runtimeconfig.json
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\bin\Debug\net7.0\Lab8_MAP_CSharp.pdb
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.csproj.AssemblyReference.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.AssemblyInfoInputs.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.AssemblyInfo.cs
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.csproj.CoreCompileInputs.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\refint\Lab8_MAP_CSharp.dll
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.pdb
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\Lab8_MAP_CSharp.genruntimeconfig.cache
+D:\UBB\Anul 2\Sem1\METODE AVANSATE DE PROGRAMARE\Lab8_MAP_CSharp - Copy\Lab8_MAP_CSharp\obj\Debug\net7.0\ref\Lab8_MAP_CSharp.dll

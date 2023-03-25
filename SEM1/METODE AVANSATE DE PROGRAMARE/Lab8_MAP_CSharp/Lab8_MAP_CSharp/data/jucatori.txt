@@ -1,0 +1,30 @@
+1,Sichet Paul,Scoala Gimnaziala “Horea”,1
+2,Sofran Daniel,Scoala Gimnaziala “Horea”,1
+3,Talpos Darius,Scoala Gimnaziala “Horea”,1
+4,Hanc Stefana,Scoala Gimnaziala “Horea”,1
+5,Bulc Denisa,Scoala Gimnaziala “Horea”,1
+6,Tofan Cristian,Scoala Gimnaziala “Horea”,1
+7,Tomoiaga Cristian,Scoala Gimnaziala “Horea”,1
+8,Tomuta Razvan,Scoala Gimnaziala “Horea”,1
+9,Tomsa Alexandru,Scoala Gimnaziala “Horea”,1
+10,Truta Bogdan,Scoala Gimnaziala “Horea”,1
+11,Tulbure Claudiu,Scoala Gimnaziala “Horea”,1
+12,Turbut Alex,Scoala Gimnaziala “Horea”,1
+13,Tit DragoS,Scoala Gimnaziala “Horea”,1
+14,Turca Vasile,Scoala Gimnaziala “Horea”,1
+15,Unguroiu Victor,Scoala Gimnaziala “Horea”,1
+16,Urban Robert,Scoala Gimnaziala "Octavian Goga",2
+17,Ursa Andra,Scoala Gimnaziala "Octavian Goga",2
+18,Vaida Octav,Scoala Gimnaziala "Octavian Goga",2
+19,Vaida Radu,Scoala Gimnaziala "Octavian Goga",2
+20,Vila Florin,Scoala Gimnaziala "Octavian Goga",2
+21,Vincze Iulia,Scoala Gimnaziala "Octavian Goga",2
+22,Agapie Bogdan,Scoala Gimnaziala "Octavian Goga",2
+23,Galan Lucian,Scoala Gimnaziala "Octavian Goga",2
+24,Voinopol Cosmin,Scoala Gimnaziala "Octavian Goga",2
+25,Zaharia Mihai Georgian,Scoala Gimnaziala "Octavian Goga",2
+26,Zarzu Victor,Scoala Gimnaziala "Octavian Goga",2
+27,Rus Ana-Maria,Scoala Gimnaziala "Octavian Goga",2
+28,Cirnu Maria Anca,Scoala Gimnaziala "Octavian Goga",2
+29,Marginean Teodor,Scoala Gimnaziala "Octavian Goga",2
+30,Ihut Andra,Scoala Gimnaziala "Octavian Goga",2
