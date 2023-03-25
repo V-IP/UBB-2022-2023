@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="428.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_map_javafx.controller.UsersController">
+    <children>
+        <SplitPane dividerPositions="0.6141467065868262" layoutX="-1.0" layoutY="-2.0" prefHeight="577.0" prefWidth="792.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="320.0">
+                    <children>
+                        <TableView fx:id="tableViewName" onMouseClicked="#tableViewNameMouseClicked" prefHeight="577.0" prefWidth="326.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="tableColumnName" maxWidth="398.0" prefWidth="324.0" text="Name" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="792.0">
+                    <children>
+                        <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="30.0" layoutY="54.0" prefHeight="26.0" prefWidth="142.0" textAlignment="CENTER" />
+                        <Button fx:id="closeButton" layoutX="25.0" layoutY="339.0" mnemonicParsing="false" onAction="#closeButtonClicked" prefHeight="27.0" prefWidth="142.0" text="Close" textAlignment="CENTER" />
+                  <TextField fx:id="searchTextField" layoutX="26.0" layoutY="170.0" promptText="Name" />
+                  <Label fx:id="seachLabel" layoutX="26.0" layoutY="136.0" prefHeight="27.0" prefWidth="142.0" text="Search friend:" />
+                  <Button fx:id="requestButton" alignment="CENTER" disable="true" layoutX="26.0" layoutY="213.0" mnemonicParsing="false" onAction="#requestButtonClicked" prefHeight="27.0" prefWidth="151.0" text="Send request" />
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
