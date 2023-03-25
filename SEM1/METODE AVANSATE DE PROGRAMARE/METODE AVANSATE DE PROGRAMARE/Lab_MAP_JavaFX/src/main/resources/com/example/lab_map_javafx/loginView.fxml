@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="250.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_map_javafx.controller.LoginController">
+    <children>
+        <TextField fx:id="loginUsername" layoutX="144.0" layoutY="62.0" prefHeight="26.0" prefWidth="154.0" promptText="Username" />
+        <PasswordField fx:id="loginPassword" layoutX="144.0" layoutY="98.0" prefHeight="26.0" prefWidth="154.0" promptText="Password" />
+        <Button fx:id="loginButton" layoutX="145.0" layoutY="177.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="26.0" prefWidth="154.0" text="Login" />
+        <Text fx:id="loginWelcomeText" layoutX="144.0" layoutY="39.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back!" textAlignment="CENTER" wrappingWidth="154.39999999999986" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="143.60000000000014">
+            <font>
+                <Font name="Courier New Bold" size="18.0" />
+            </font>
+        </Text>
+      <Hyperlink fx:id="hyperlink" alignment="CENTER" layoutX="145.0" layoutY="212.0" onAction="#hiperlinkClicked" prefHeight="11.0" prefWidth="154.0" text="New here? Register." textAlignment="CENTER" />
+    </children>
+</AnchorPane>
